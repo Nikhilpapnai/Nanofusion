@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil Papnai | Portfolio</title>
+
+  <!-- Fonts & Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f9fafb;
+      color: #1e293b;
+    }
+
+    /* Hero */
+    header {
+      background: linear-gradient(135deg, #2563eb, #14b8a6, #9333ea);
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .hero-container img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      transform: scale(1.05); /* Slight zoom */
+      transition: transform 0.4s ease;
+    }
+    .hero-container img:hover {
+      transform: scale(1.15); /* Zoom more on hover */
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      margin: 0.8rem 0 0;
+      font-size: 1.3rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero-container {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+      }
+      .hero-text {
+        margin-left: 2rem;
+      }
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      background: linear-gradient(90deg, #2563eb, #9333ea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+    }
+    .card img {
+      width: 70px;
+      margin-bottom: 1rem;
+    }
+    .achievement-card {
+      background: linear-gradient(135deg, #2563eb, #14b8a6);
+      color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.05rem;
+    }
+    ul li i {
+      color: #2563eb;
+    }
+    footer {
+      background: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #38bdf8;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero -->
+  <header data-aos="zoom-in">
+    <div class="hero-container">
+      <img src="https://raw.githubusercontent.com/Nikhilpapnai/MyProfile/main/Image.png" alt="Nikhil Papnai">
+      <div class="hero-text">
+        <h1>Nikhil Papnai</h1>
+        <p>Chemical Engineer | Process Control | Machine Learning</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:750px; margin:auto;">
+      I am a B.Tech Chemical Engineering student at IIT Ropar (2023–27) with a keen interest in process control, materials engineering, and machine learning applications in chemical systems. I have hands-on experience in process modeling and optimization, including working on an industrial project in a Sulfur Recovery Unit (SRU) using real industrial data. I am currently exploring computational fluid dynamics (CFD) and actively learning material property characterization techniques, including electrochemical analysis and applied surface finishing processes. I aim to leverage AI-driven approaches to integrate chemical engineering fundamentals with computational and materials research, contributing to impactful projects and innovative solutions.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card" data-aos="flip-left">
+        <img src="https://img.icons8.com/color/96/artificial-intelligence.png" alt="ML">
+        <h3>Machine Learning</h3>
+        <p>Regression, Neural Networks, GNNs, LSTMs, optimization for chemical systems</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="https://img.icons8.com/color/96/process.png" alt="Process Control">
+        <h3>Process Control</h3>
+        <p>Reactor modeling, sulfur recovery systems, moving-horizon estimation</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="https://img.icons8.com/color/96/laboratory.png" alt="Materials">
+        <h3>Materials</h3>
+        <p>Surface treatments, coatings, data-driven material property prediction</p>
+      </div>
+      <div class="card" data-aos="flip-left">
+        <img src="https://img.icons8.com/color/96/leadership.png" alt="Leadership">
+        <h3>Soft Skills</h3>
+        <p>Teaching, teamwork, event leadership, communication</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" data-aos="fade-left">
+    <h2>Education</h2>
+    <div class="card">
+      <img src="https://img.icons8.com/color/96/graduation-cap.png" alt="Education">
+      <h3>B.Tech in Chemical Engineering - IIT Ropar</h3>
+      <p>2023 – 2027</p>
+      <p><strong>Grade:</strong> A-</p>
+      <p><strong>Relevant Coursework:</strong> Process Control, Thermodynamics, Machine Learning, Material Properties, Surface Treatment</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card" data-aos="zoom-in">
+        <img src="https://img.icons8.com/color/96/laboratory.png" alt="Electrochemical Characterisation">
+        <h3>Electrochemical Characterisation of Materials</h3>
+        <p>Studying material properties using electrochemical techniques such as cyclic voltammetry and impedance spectroscopy to understand surface behavior and reaction kinetics.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <img src="https://img.icons8.com/color/96/test-tube.png" alt="Surface Finishing">
+        <h3>Applied Surface Finishing Techniques</h3>
+        <p>Studying coating and surface treatment processes, optimizing parameters for corrosion resistance and mechanical performance of materials.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <img src="https://img.icons8.com/color/96/factory.png" alt="SRU">
+        <h3>Sulfur Recovery Unit Optimization</h3>
+        <p>Applied process modeling and machine learning to predict and optimize sulfur emissions using real industrial data.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <img src="https://img.icons8.com/color/96/laboratory.png" alt="Blend Prediction">
+        <h3>Blend Property Prediction</h3>
+        <p>Ensemble models (CatBoost + ANN) with SHAP-based feature selection for predicting chemical blend properties accurately.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERN -->
+  <section id="cern" data-aos="fade-up">
+    <h2>Why CERN</h2>
+    <p style="text-align:center; max-width:750px; margin:auto;">
+      I am eager to work at CERN, a globally renowned research environment where people from multiple nationalities and diverse backgrounds collaborate. This opportunity will allow me to experience a new professional setting, learn from a multicultural team, and broaden my technical knowledge. I am particularly interested in materials science, which complements my background in chemical engineering. I have recently started studying electrochemical characterization techniques and applied surface finishing processes, and I am excited to explore these areas further in a practical, research-focused environment. By combining my experience in process modeling, optimization, and machine learning with exposure to materials research at CERN, I hope to contribute effectively while continuing to learn and develop skills in new fields relevant to my discipline.
+    </p>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" data-aos="fade-left">
+    <h2>Achievements</h2>
+    <div class="achievement-card" data-aos="flip-right">
+      <h3>Teaching Assistant</h3>
+      <p>Supporting undergraduate courses in chemical engineering, guided lab work.</p>
+    </div>
+    <div class="achievement-card" data-aos="flip-right">
+      <h3>Research Internship</h3>
+      <p>Worked on ML integration with process systems for optimisation.</p>
+    </div>
+    <div class="achievement-card" data-aos="flip-right">
+      <h3>Projects</h3>
+      <p>Built reactor models, optimised sulfur recovery process, ML-based property prediction.</p>
+    </div>
+    <ul style="margin-top:2rem;">
+      <li><i class="fas fa-trophy"></i> Top 60 (out of 8,000) – Shell Global Hackathon</li>
+      <li><i class="fas fa-rocket"></i> Top 10 (out of 60,000) – Bharatiya Antariksh Hackathon</li>
+      <li><i class="fas fa-medal"></i> Winner & Finalist in multiple inter-college hackathons (ML & Sustainability)</li>
+      <li><i class="fas fa-users"></i> Head, <strong>Advitiya</strong> – IIT Ropar’s Annual Tech Fest</li>
+      <li><i class="fas fa-flask"></i> Head, <strong>Cheers</strong> – Annual Chemical Engineering Event</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p style="text-align:center;">Feel free to connect with me:</p>
+    <p style="text-align:center;">
+      <a href="mailto:papnainikhil@gmail.com"><i class="fas fa-envelope"></i> papnainikhil@gmail.com</a> <br>
+      <a href="https://github.com/Nikhilpapnai" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+      <a href="https://www.linkedin.com/in/nikhil-papnai-8a276b287/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Nikhil Papnai. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1200, once: true });</script>
+</body>
+</html>
